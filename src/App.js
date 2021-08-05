@@ -15,8 +15,8 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Hero />
-          <Bringing />
           <Footer />
+          <Bringing />
         </Route>
       </Switch>
     </Router>
