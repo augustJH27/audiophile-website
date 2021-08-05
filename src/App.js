@@ -1,5 +1,6 @@
 import React from 'react';
 import Hero from './components/Hero/Hero';
+import Footer from './components/Footer/Footer';
 import {
   BrowserRouter as Router,
   Switch,
@@ -13,6 +14,7 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Hero />
+          <Footer />
         </Route>
       </Switch>
     </Router>
