@@ -37,8 +37,7 @@ const Footer = () => {
           <ul>
             <li>
               <Link
-                to='https://www.facebook.com/'
-                target='_blank'
+                to='#'
                 aria-label='follow us on facebook'
               >
                 <Facebook className='social-icon' />
@@ -46,8 +45,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to='https://twitter.com/?lang=en'
-                target='_blank'
+                to='#'
                 aria-label='follow us on twitter '
               >
                 <Twitter className='social-icon' />
@@ -55,8 +53,7 @@ const Footer = () => {
             </li>
             <li>
               <Link
-                to='https://www.instagram.com/'
-                target='_blank'
+                to='#'
                 aria-label='follow us on twitter '
               >
                 <Instagram className='social-icon' />
