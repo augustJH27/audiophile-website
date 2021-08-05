@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import styles from "./catcon.module.css";
 import headphone from "../../../components/assets/category-headphones/desktop/image-xx99-mark-one.png";
@@ -7,6 +8,20 @@ import earphone from "../../../components/assets/category-earphones/desktop/imag
 import shopicon from "../../../../src/components/assets/shopIcon.png";
 
 const CategoryContainer = () => {
+  const history = useHistory();
+
+  const headphoneClick = () => {
+    history.push("/headphones");
+  };
+
+  const speakerClick = () => {
+    history.push("/speakers");
+  };
+
+  const earphoneClick = () => {
+    history.push("/earphones");
+  };
+
   return (
     <div>
       {/* CATEGORY CONTAINER */}
@@ -17,7 +32,7 @@ const CategoryContainer = () => {
           <img className={styles.headphone__pict} src={headphone} />
           <div className={styles.shadow} />
           <p className={styles.title__cat}>HEADPHONES</p>
-          <button className={styles.shop__btn}>
+          <button onClick={headphoneClick} className={styles.shop__btn}>
             Shop <img className={styles.btn__icon} src={shopicon} />
           </button>
           <div className={styles.container__bg} />
@@ -27,7 +42,7 @@ const CategoryContainer = () => {
           <img className={styles.speaker__pict} src={speaker} />
           <div className={styles.shadow} />
           <p className={styles.title__cat}>SPEAKERS</p>
-          <button className={styles.shop__btn}>
+          <button onClick={speakerClick} className={styles.shop__btn}>
             Shop <img className={styles.btn__icon} src={shopicon} />
           </button>
           <div className={styles.container__bg} />
@@ -37,7 +52,7 @@ const CategoryContainer = () => {
           <img className={styles.earphone__pict} src={earphone} />
           <div className={styles.shadow} />
           <p className={styles.title__cat}>EARPHONES</p>
-          <button className={styles.shop__btn}>
+          <button onClick={earphoneClick} className={styles.shop__btn}>
             Shop <img className={styles.btn__icon} src={shopicon} />
           </button>
           <div className={styles.container__bg} />

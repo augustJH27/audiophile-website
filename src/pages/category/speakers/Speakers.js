@@ -4,8 +4,8 @@ import { useHistory } from "react-router-dom";
 import CategoryContainer from "../categoryContainer/CategoryContainer";
 
 import styles from "./speaker.module.css";
-import speaker1 from "../../../components/assets/category-speakers/desktop/image-zx7.jpg";
-import speaker2 from "../../../components/assets/category-speakers/desktop/image-zx9.jpg";
+import speaker1 from "../../../components/assets/category-speakers/desktop/image-zx7.png";
+import speaker2 from "../../../components/assets/category-speakers/desktop/image-zx9.png";
 
 const Speakers = () => {
   return (

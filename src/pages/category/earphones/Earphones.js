@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import CategoryContainer from "../categoryContainer/CategoryContainer";
 
 import styles from "./earphone.module.css";
-import earphone1 from "../../../components/assets/category-earphones/desktop/image-yx1-earphones.jpg";
+import earphone1 from "../../../components/assets/category-earphones/desktop/image-yx1-earphones.png";
 
 const Earphones = () => {
   return (
