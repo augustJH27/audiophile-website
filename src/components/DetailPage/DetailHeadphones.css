@@ -1,0 +1,38 @@
+.container-mark2 {
+  display: flex;
+  align-items: center;
+  margin: 25px;
+}
+
+.mark2-image {
+  width: 50%;
+  margin-left: 10%;
+}
+
+img {
+  height: 540px;
+  width: 560px;
+  border-radius: 8px;
+}
+
+.mark2-button {
+  display: flex;
+}
+
+.mark2-spect {
+  padding: 25px;
+  width: 50%;
+}
+
+.features-mark2 {
+  margin-left: 10%;
+  width: 40%;
+}
+
+.include-mark2 {
+  margin-left: 15%;
+}
+
+.mark2-example {
+  display: flex;
+}

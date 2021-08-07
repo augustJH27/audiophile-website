@@ -1,12 +1,21 @@
-import React from "react";
 import "./App.css";
-import detailHeadphone from "./component/DetailPage/detailHeadphone";
+import React from "react";
+import Hero from "./components/Hero/Hero";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import DetailHeadphone from "./components/DetailPage/detailHeadphone";
 
 function App() {
   return (
-    <div>
-      <detailHeadphone />
-    </div>
+    <Router>
+      <Switch>
+        <Route exact path="/">
+          <Hero />
+        </Route>
+        <Route exact path="/detail">
+          <DetailHeadphone />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
