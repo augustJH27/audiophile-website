@@ -5,14 +5,13 @@ import { links } from '../../helpers/link';
 import logo from '../assets/shared/desktop/logo.svg';
 import icon_cart from '../assets/shared/desktop/icon-cart.svg';
 
-const Header = () => {
+const Navbar = () => {
   const location = useLocation();
   return (
     <Wrapper
       className={`${location.pathname === '/' ? 'light-bgc' : 'black-bgc'}`}
     >
       <div className='container header__container'>
-        {/* <BurgerButton /> */}
         <Link to='/' className='logo'>
           <img src={logo} alt='logo' />
         </Link>
@@ -99,4 +98,4 @@ const Nav = styled.nav`
     gap: 34px;
   }
 `;
-export default Header;
+export default Navbar;
