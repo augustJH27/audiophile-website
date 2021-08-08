@@ -4,6 +4,10 @@ import Mark2 from "../assets/product-xx99-mark-two-headphones/desktop/image-prod
 import Example1 from "../assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg";
 import Example2 from "../assets/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg";
 import Example3 from "../assets/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg";
+import Headphone2 from "../assets/product-xx99-mark-one-headphones/desktop/image-product.jpg";
+import Headphone3 from "../assets/product-xx59-headphones/desktop/image-product.jpg";
+import Speaker1 from "../assets/product-zx9-speaker/desktop/image-product.jpg";
+import Bringing from "../Bringing/Bringing";
 
 const detailHeadphone = () => {
   return (
@@ -15,86 +19,100 @@ const detailHeadphone = () => {
           <img src={Mark2} alt="img" />
         </div>
         <div className="mark2-spect">
-          <h3>NEW PRODUCT</h3>
+          <h7>NEW PRODUCT</h7>
           <h1>XX99 MARK I</h1>
           <h1>HEADPHONES</h1>
 
-          <p>
+          <p className="spect">
             The new XX99 Mark II headphones is the pinnacle of pristine audio.
             It redefines your premium headphone experience by reproducing the
             balanced depth and precision of studio-quality sound.
           </p>
 
-          <span>$ 1,750</span>
+          <div className="price-mark2">$ 1,750</div>
+
           <div className="mark2-button">
-            <div>1</div>
-            <button>ADD TO CART</button>
+            <div className="btn-jumlah">
+              <div className="counter">
+                <div className="counter-min">-</div>
+                <div>1</div>
+                <div className="counter-max">+</div>
+              </div>
+            </div>
+            <button className="btn-add">ADD TO CART</button>
           </div>
         </div>
       </div>
 
-      <div className="container-mark2">
+      <div className="container-features-mark2">
         <div className="features-mark2">
-          <h1>FEATURES</h1>
-          <p>
-            As the headphones all others are measured against, the XX99 Mark I
-            demonstrates over five decades of audio expertise, redefining the
-            critical listening experience. This pair of closed-back headphones
-            are made of industrial, aerospace-grade materials to emphasize
-            durability at a relatively light weight of 11 oz. From the
-            handcrafted microfiber ear cushions to the robust metal headband
-            with inner damping element, the components work together to deliver
-            comfort and uncompromising sound. Its closed-back design delivers up
-            to 27 dB of passive noise cancellation, reducing resonance by
-            reflecting sound to a dedicated absorber. For connectivity, a
-            specially tuned cable is included with a balanced gold connector.
+          <h1 className="features-titel">FEATURES</h1>
+          <p className="features-desc">
+            Featuring a genuine leather head strap and premium earcups, these
+            headphones deliver superior comfort for those who like to enjoy
+            endless listening. It includes intuitive controls designed for any
+            situation. Whether you’re taking a business call or just in your own
+            personal space, the auto on/off and pause features ensure that
+            you’ll never miss a beat.
+            <br />
+            <br />
+            The advanced Active Noise Cancellation with built-in equalizer allow
+            you to experience your audio world on your terms. It lets you enjoy
+            your audio in peace, but quickly interact with your surroundings
+            when you need to. Combined with Bluetooth 5. 0 compliant
+            connectivity and 17 hour battery life, the XX99 Mark II headphones
+            gives you superior sound, cutting-edge technology, and a modern
+            design aesthetic.
           </p>
         </div>
 
         <div className="include-mark2">
-          <h1>IN THE BOX</h1>
+          <h1 className="features-titel">IN THE BOX</h1>
           <p>
-            <span>1x</span> Headphone Unit
+            <span className="include-item">1x</span> Headphone Unit
           </p>
           <p>
-            <span>2x</span> Replacement Earcups
+            <span className="include-item">2x</span>Replacement Earcups
           </p>
           <p>
-            <span>1x</span> User Manual
+            <span className="include-item">1x</span> User Manual
           </p>
           <p>
-            <span>1x</span> 3.5mm 5m Audio Cable
+            <span className="include-item">1x</span> 3.5mm 5m Audio Cable
           </p>
         </div>
       </div>
 
       <div className="mark2-example">
         <div className="mark2-row">
-          <img src={Example1} alt="img" />
-          <img src={Example2} alt="img" />
+          <img src={Example1} className="example1img" alt="img" />
+          <img src={Example2} className="example3img" alt="img" />
         </div>
 
         <div>
-          <img src={Example3} alt="img" />
+          <img src={Example3} className="example2img" alt="img" />
         </div>
       </div>
 
-      <div>YOU MAY ALSO LIKE</div>
+      <div className="like-item-titel">YOU MAY ALSO LIKE</div>
 
-      <div>
-        <div>
-          XX99 MARK II
-          <button>SEE PRODUCT</button>
+      <div className="card-item-container">
+        <div className="card-like">
+          <img src={Headphone2} alt="1" className="like-item" />
+          <p className="item-name">XX99 MARK I</p>
+          <button className="btn-add">SEE PRODUCT</button>
         </div>
 
-        <div>
-          XX59
-          <button>SEE PRODUCT</button>
+        <div className="card-like">
+          <img src={Headphone3} alt="1" className="like-item" />
+          <p className="item-name">XX59</p>
+          <button className="btn-add">SEE PRODUCT</button>
         </div>
 
-        <div>
-          ZX9 SPEAKER
-          <button>SEE PRODUCT</button>
+        <div className="card-like">
+          <img src={Speaker1} alt="1" className="like-item" />
+          <p className="item-name">ZX9 SPEAKER</p>
+          <button className="btn-product">SEE PRODUCT</button>
         </div>
       </div>
 
@@ -114,19 +132,7 @@ const detailHeadphone = () => {
       </div>
 
       <div>
-        <div>
-          <h1>Bringing you the </h1>
-          <h1>best audio gear</h1>
-
-          <p>
-            Located at the heart of New York City, Audiophile is the premier
-            store for high end headphones, earphones, speakers, and audio
-            accessories. We have a large showroom and luxury demonstration rooms
-            available for you to browse and experience a wide range of our
-            products. Stop by our store to meet some of the fantastic people who
-            make Audiophile the best place to buy your portable audio equipment.
-          </p>
-        </div>
+        <Bringing />
         <div>gambarOrang</div>
       </div>
     </div>

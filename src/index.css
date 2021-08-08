@@ -17,6 +17,7 @@
   --clr-grey-3: hsl(0, 0%, 81%);
   --clr-border: hsl(0, 0%, 10%);
   --clr-danger: hsl(0, 65%, 49%);
+
   /* Font size */
   --fs-h1: 3.5rem;
   --fs-h2: 2.5rem;
@@ -37,7 +38,9 @@
   --lh-base: 1.56rem;
   --lh-mili: 1.2rem;
   --lh-micro: 1.56rem;
+
   /* Letter spacing */
+
   --ls-h1: 0.125rem;
   --ls-h2: 0.094rem;
   --ls-h3: 0.072rem;
@@ -46,9 +49,12 @@
   --ls-h6: 0.081rem;
   --ls-mili: 0.625rem;
   --ls-micro: 0.063rem;
+  
   /* Offsets */
   --offset-big: 2.375rem;
+
   /* Others */
+
   --radius: 0.5rem;
   --modal-background: 0 0 0 1000rem rgba(0, 0, 0, 0.4);
   --burger-transition: all 0.5s ease-in-out;

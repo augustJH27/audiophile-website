@@ -1,0 +1,107 @@
+.catcon__wraper {
+  display: grid;
+  width: 1110px;
+  height: 285px;
+  margin: 165px auto 80px auto;
+}
+
+/* ================ */
+
+.headphone__wraper {
+  grid-column: 1;
+  grid-row: 1;
+  width: 350px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.headphone__pict {
+  width: 120px;
+  height: 160px;
+}
+
+/* ================ */
+
+.speaker__wraper {
+  grid-column: 2;
+  grid-row: 1;
+  width: 350px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.speaker__pict {
+  width: 120px;
+  height: 160px;
+}
+
+/* ================ */
+
+.earphone__wraper {
+  grid-column: 3;
+  grid-row: 1;
+  width: 350px;
+  height: 200px;
+  border-radius: 7px;
+}
+
+.earphone__pict {
+  width: 160px;
+  height: 160px;
+}
+
+.container__bg {
+  z-index: auto;
+  margin-top: -170px;
+  width: 350px;
+  height: 200px;
+  background: #f1f1f1;
+  border-radius: 7px;
+}
+
+.shadow {
+  width: 120px;
+  height: 12px;
+  margin: auto;
+
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.4;
+  filter: blur(12px);
+}
+
+.title__cat {
+  top: calc(50% - 25px / 2 + 66.5px);
+
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 1.28571px;
+  text-transform: uppercase;
+  margin: 5px auto -130px auto;
+}
+
+.shop__btn {
+  margin: 140px 0 0 0;
+
+  background: none;
+  border: none;
+
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  color: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
