@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import {motion} from 'framer-motion';
 
 import EarphonesMobile from '../assets/home/mobile/image-earphones-yx1.jpg';
 import EarphonesTablet from '../assets/home/tablet/image-earphones-yx1.jpg';
@@ -66,6 +67,8 @@ const ImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: var(--radius);
+    animation:pulse;
+    animation-duration: 7s;
   }
   @media screen and (min-width: 768px) {
     max-width: 50%;

@@ -9,6 +9,8 @@ import {
   Switch,
   Route,
 } from 'react-router-dom';
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
 
 
 function App() {
@@ -16,12 +18,14 @@ function App() {
     <Router>
       <Switch>
         <Route exact path='/'>
+        <Navbar />
         <Hero />
           <Container>
           <Catalog />
           <Hero2 />
           <Bringing />
           </Container> 
+        <Footer />
         </Route>
       </Switch>
     </Router>
