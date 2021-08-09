@@ -9,7 +9,7 @@ import EarphonesYX1 from './Earphones_YX1';
 const Hero2 = () => {
   return (
     <Wrapper className='container'>
-      <h2>I am hidden, try to find me!</h2>
+      <h2>Speaker Page</h2>
       <SpeakerZX9 />
       <SpeakerZX7 />
       <EarphonesYX1 />

@@ -2,7 +2,6 @@ import headphones from '../components/assets/shared/desktop/image-headphones.png
 import earphones from '../components/assets/shared/desktop/image-earphones.png';
 import speakers from '../components/assets/shared/desktop/image-speakers.png';
 
-
 export const links = [
   {
     id: 1,
