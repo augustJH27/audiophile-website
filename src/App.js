@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import LandingPage from './pages/LandingPage';
+import Checkout from './components/checkout/Checkout';
 import Footer from './components/Footer/Footer';
 
 // import DetailHeadphone from "./components/DetailPage/detailHeadphone";
@@ -18,8 +19,8 @@ function App() {
       <Switch>
         <Route exact path='/'>
         <Navbar />
-        <LandingPage />
-
+        {/* <LandingPage /> */}
+        <Checkout />
         {/* <Route exact path='/headphones'>
         <HeadphonesPage />
         </Route> */}

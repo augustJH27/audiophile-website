@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./checkout.css";
-import { Formik, Form } from "formik";
+// import { Formik, Form } from "formik";
 import ft1 from "../../assets/ft1.jpg";
 import ft2 from "../../assets/ft2.jpg";
 import ft3 from "../../assets/ft3.jpg";

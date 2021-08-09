@@ -71,13 +71,13 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   font-family: 'Manrope', sans-serif;
   line-height: var(--lh-base);
   font-size: var(--fs-base);
   color: var(--clr-black);
   background-color: var(--clr-primary-4);
-}
+} */
 
 ul {
   list-style-type: none;
@@ -132,11 +132,11 @@ h6 {
   text-transform: uppercase;
 }
 
-.container {
+/* .container {
   width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
-}
+} */
 
 .btn-1 {
   display: inline-block;
