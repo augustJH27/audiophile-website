@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import image_mobile from '../assets/shared/mobile/image-best-gear.jpg';
-import image_tablet from '../assets/shared/tablet/image-best-gear.jpg';
-import image_desktop from '../assets/shared/desktop/image-best-gear.jpg';
+import ImageMobile from '../assets/shared/mobile/image-best-gear.jpg';
+import ImageTablet from '../assets/shared/tablet/image-best-gear.jpg';
+import ImageDesktop from '../assets/shared/desktop/image-best-gear.jpg';
 
 const Bringing = () => {
   const width = window.innerWidth;
@@ -13,10 +13,10 @@ const Bringing = () => {
         <img
           src={`${
             width >= 1280
-              ? image_desktop
+              ? ImageDesktop
               : width >= 768
-              ? image_tablet
-              : image_mobile
+              ? ImageTablet
+              : ImageMobile
           }`}
           alt='best gear'
         />
