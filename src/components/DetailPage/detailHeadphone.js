@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import "./DetailHeadphones.css";
 import Mark2 from "../assets/product-xx99-mark-two-headphones/desktop/image-product.jpg";
 import Example1 from "../assets/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg";
@@ -7,12 +7,19 @@ import Example3 from "../assets/product-xx99-mark-two-headphones/desktop/image-g
 import Headphone2 from "../assets/product-xx99-mark-one-headphones/desktop/image-product.jpg";
 import Headphone3 from "../assets/product-xx59-headphones/desktop/image-product.jpg";
 import Speaker1 from "../assets/product-zx9-speaker/desktop/image-product.jpg";
-import Bringing from "../Bringing/Bringing";
+import Product1 from "../assets/category-headphones/desktop/image-xx99-mark-one.png";
+import Product2 from "../assets/category-speakers/desktop/image-zx9.png";
+import Product3 from "../assets/category-earphones/desktop/image-yx1-earphones.png";
+import { product } from "prelude-ls";
+import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 
 const detailHeadphone = () => {
   return (
-    <div>
-      <span>Go Back</span>
+    <div className="detail">
+      <div className="kembali">
+        <span>Go Back</span>
+      </div>
 
       <div className="container-mark2">
         <div className="mark2-image">
@@ -116,27 +123,39 @@ const detailHeadphone = () => {
         </div>
       </div>
 
-      <div>
-        <div>
-          <h4>HEADPHONES</h4>
-          <span>SHOP</span>
+      <div className="card-produk">
+        <div className="card-bg">
+          <img src={Product1} alt="pict" className="produck-lain" />
+
+          <div className="card-name">
+            <h4>HEADPHONES</h4>
+            <span>SHOP</span>
+          </div>
         </div>
-        <div>
-          <h4>SPEAKER</h4>
-          <span>SHOP</span>
+        <div className="card-bg">
+          <img src={Product2} alt="pict" className="produck-lain" />
+
+          <div className="card-name">
+            <h4>SPEAKER</h4>
+            <span>SHOP</span>
+          </div>
         </div>
-        <div>
-          <h4>EARPHONE</h4>
-          <span>SHOP</span>
+        <div className="card-bg">
+          <img src={Product3} alt="pict" className="produck-lain" />
+
+          <div className="card-name">
+            <h4>EARPHONE</h4>
+            <span>SHOP</span>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div>
+      <div className="marketing">
+        <div className="marketing-desc">
           <h4>
-            bringing you the <span>best</span> audio gear
+            bringing you the <span className="kataWarna">best</span> audio gear
           </h4>
-          <p>
+          <p className="marketing-word">
             Located at the heart of New York City, Audiophile is the premier
             store for high end headphones, earphones, speakers, and audio
             accessories. We have a large showroom and luxury demonstration rooms
@@ -145,8 +164,9 @@ const detailHeadphone = () => {
             make Audiophile the best place to buy your portable audio equipment.
           </p>
         </div>
-
-        <div>gambarOrang</div>
+        <div>
+          <img src={Example1} alt="pict" className="orang" />
+        </div>
       </div>
     </div>
   );

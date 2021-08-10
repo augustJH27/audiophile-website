@@ -1,7 +1,18 @@
+.detail {
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  margin-top: 5vh;
+}
+
+.kembali {
+  margin-left: 25vh;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+}
+
 .container-mark2 {
   display: flex;
   align-items: center;
-  margin: 55px;
 }
 
 .mark2-image {
@@ -15,7 +26,7 @@ img {
   border-radius: 8px;
 }
 
-h7 {
+h6 {
   letter-spacing: 15px;
   color: #d87d4a;
   line-height: 55px;
@@ -75,7 +86,7 @@ h7 {
 
 .container-features-mark2 {
   display: flex;
-  margin: 25vh 55px 55px 55px;
+  margin: 25vh 25px 25px 25px;
 }
 
 .features-mark2 {
@@ -175,4 +186,59 @@ h7 {
   border: none;
   border-radius: 2px;
   color: #fff;
+}
+
+.card-produk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40vh;
+}
+.produck-lain {
+  height: 160px;
+  width: 122px;
+  position: relative;
+  bottom: 75px;
+  left: 35%;
+}
+
+.orang {
+  width: 440px;
+  height: 588px;
+}
+
+.card-bg {
+  height: 200px;
+  width: 350px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  margin-left: 25px;
+}
+
+.card-name {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-top: -50px;
+}
+
+.marketing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25vh;
+  margin-bottom: 10vh;
+}
+
+.marketing-desc {
+  width: 40%;
+  margin-right: 5%;
+}
+
+.marketing-word {
+  margin-top: 30px;
+  text-align: justify;
+}
+
+.kataWarna {
+  color: #d87d4a;
 }
