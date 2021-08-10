@@ -19,7 +19,7 @@ const detailHeadphone = () => {
           <img src={Mark2} alt="img" />
         </div>
         <div className="mark2-spect">
-          <h7>NEW PRODUCT</h7>
+          <h6>NEW PRODUCT</h6>
           <h1>XX99 MARK I</h1>
           <h1>HEADPHONES</h1>
 
@@ -132,7 +132,20 @@ const detailHeadphone = () => {
       </div>
 
       <div>
-        <Bringing />
+        <div>
+          <h4>
+            bringing you the <span>best</span> audio gear
+          </h4>
+          <p>
+            Located at the heart of New York City, Audiophile is the premier
+            store for high end headphones, earphones, speakers, and audio
+            accessories. We have a large showroom and luxury demonstration rooms
+            available for you to browse and experience a wide range of our
+            products. Stop by our store to meet some of the fantastic people who
+            make Audiophile the best place to buy your portable audio equipment.
+          </p>
+        </div>
+
         <div>gambarOrang</div>
       </div>
     </div>
