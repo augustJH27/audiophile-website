@@ -3,7 +3,7 @@ import Each from './Each';
 import data from '../../helpers/earphones';
 import styled from 'styled-components';
 
-const Earphones = () => {
+const Earphone = () => {
   return (
     <Wrapper className='container'>
       {data.map((item) => {
@@ -19,4 +19,4 @@ const Wrapper = styled.section`
   gap: 7.5rem;
 `;
 
-export default Earphones;
+export default Earphone;

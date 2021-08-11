@@ -3,7 +3,7 @@ import Each from './Each';
 import data from '../../helpers/speakers';
 import styled from 'styled-components';
 
-const Headphones = () => {
+const Speaker = () => {
   return (
     <Wrapper className='container'>
       {data.map((item) => {
@@ -22,4 +22,4 @@ const Wrapper = styled.section`
   }
 `;
 
-export default Headphones;
+export default Speaker;

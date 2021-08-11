@@ -1,6 +1,6 @@
 import React from 'react';
 import Each from './Each';
-import data from '../../helpers/earphones';
+import data from '../../helpers/headphones';
 import styled from 'styled-components';
 
 const Headphone = () => {

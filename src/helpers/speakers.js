@@ -1,9 +1,9 @@
-import zx7_mobile from '/category-speakers/mobile/image-zx7.jpg';
-import zx7_tablet from '/category-speakers/tablet/image-zx7.jpg';
-import zx7_desktop from '/category-speakers/desktop/image-zx7.jpg';
-import zx9_mobile from '/category-speakers/mobile/image-zx9.jpg';
-import zx9_tablet from '/category-speakers/tablet/image-zx9.jpg';
-import zx9_desktop from '/category-speakers/desktop/image-zx9.jpg';
+import zx7_mobile from '../components/assets/category-speakers/mobile/image-zx7.jpg';
+import zx7_tablet from '../components/assets/category-speakers/tablet/image-zx7.jpg';
+import zx7_desktop from '../components/assets/category-speakers/desktop/image-zx7.jpg';
+import zx9_mobile from '../components/assets/category-speakers/mobile/image-zx9.jpg';
+import zx9_tablet from '../components/assets/category-speakers/tablet/image-zx9.jpg';
+import zx9_desktop from '../components/assets/category-speakers/desktop/image-zx9.jpg';
 
 const data = [
   {

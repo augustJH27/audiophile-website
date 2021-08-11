@@ -11,7 +11,7 @@ import {
 } from 'react-router-dom';
 
 
-function App() {
+function LandingPage() {
   return (
     <Router>
       <Switch>
@@ -43,4 +43,4 @@ const Container = styled.div`
   }
 `;
 
-export default App;
+export default LandingPage;

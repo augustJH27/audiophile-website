@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import SpeakerMobile from '../assets/home/mobile/image-speaker-zx7.jpg';
-import SpeakerTablet from '../assets/home/mobile/image-speaker-zx7.jpg';
-import SpeakerDesktop from '../assets/home/mobile/image-speaker-zx7.jpg';
+import SpeakerTablet from '../assets/home/tablet/image-speaker-zx7.jpg';
+import SpeakerDesktop from '../assets/home/desktop/image-speaker-zx7.jpg';
 
 import { scrollToTop } from '../../helpers/constants';
 

@@ -1,17 +1,22 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import styled from 'styled-components';
+import { useGlobalContext } from '../../helpers/context';
+import { Link, useLocation } from 'react-router-dom';
 import { links } from '../../helpers/link';
 import logo from '../assets/shared/desktop/logo.svg';
 import icon_cart from '../assets/shared/desktop/icon-cart.svg';
+import Burger from '../Burger/Burger';
+import Cart from '../Cart/Cart';
 
 const Navbar = () => {
   const location = useLocation();
+  const { toggleCartModal, cart } = useGlobalContext();
   return (
     <Wrapper
       className={`${location.pathname === '/' ? 'light-bgc' : 'black-bgc'}`}
     >
       <div className='container header__container'>
+        <Burger />
         <Link to='/' className='logo'>
           <img src={logo} alt='logo' />
         </Link>
@@ -34,9 +39,11 @@ const Navbar = () => {
             className='cart-image'
             src={icon_cart}
             alt='cart'
+            onClick={toggleCartModal}
           />
-          <span className='cart-count'></span>
+          <span className='cart-count'>{cart.length}</span>
         </div>
+        <Cart />
       </div>
     </Wrapper>
   );
