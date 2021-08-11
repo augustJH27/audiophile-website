@@ -17,6 +17,7 @@ export const schema = yup.object().shape({
   name: yup
     .string()
     .matches(/^([^0-9]*)$/, 'should not contain numbers')
+    //regex for alphabet only, number is not allow - agus
     .required('this field is required'),
   email: yup.string().email('wrong format').required(errorMessage),
   phone_number: yup.string().required(errorMessage),
@@ -55,8 +56,7 @@ const Checkout = () => {
 
   useEffect(() => {
     trigger('payment_method');
-  });
-  // }, []);
+  }, []);
 
   const onSubmit = (data) => {
     console.log(data);
@@ -84,6 +84,7 @@ const Checkout = () => {
                 placeholder='Alexei Ward'
                 register={register}
                 errors={errors}
+                required
               />
               <Text
                 label='email'
@@ -92,6 +93,7 @@ const Checkout = () => {
                 placeholder='alexei@mail.com'
                 register={register}
                 errors={errors}
+                required
               />
               <Text
                 label='phone_number'
@@ -100,6 +102,7 @@ const Checkout = () => {
                 placeholder='+1 202-555-0136'
                 register={register}
                 errors={errors}
+                required
               />
             </FieldWrapper>
           </FormGroup>
@@ -114,6 +117,7 @@ const Checkout = () => {
                 errors={errors}
                 register={register}
                 className='address-field'
+                required
               />
               <Text
                 label='zip_code'
@@ -122,6 +126,7 @@ const Checkout = () => {
                 placeholder='10001'
                 errors={errors}
                 register={register}
+                required
               />
               <Text
                 label='city'
@@ -130,6 +135,7 @@ const Checkout = () => {
                 placeholder='New York'
                 errors={errors}
                 register={register}
+                required
               />
               <Text
                 label='country'
@@ -138,6 +144,7 @@ const Checkout = () => {
                 placeholder='United States'
                 errors={errors}
                 register={register}
+                required
               />
             </FieldWrapper>
           </FormGroup>
