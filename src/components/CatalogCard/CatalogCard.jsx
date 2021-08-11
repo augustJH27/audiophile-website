@@ -1,16 +1,16 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
-import { scrollToTop } from '../../helpers/constants';
+import React from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
+import { scrollToTop } from "../../helpers/constants";
 
 const CategoryCard = ({ img, text, url }) => {
   return (
     <ListItem>
       <img src={img} alt={text} />
-      <div className='card'>
-        <h6 className='card__title'>{text}</h6>
+      <div className="card">
+        <h6 className="card__title">{text}</h6>
         <Link
-          className='btn-3'
+          className="btn-3"
           to={url}
           onClick={() => {
             scrollToTop();
@@ -31,8 +31,11 @@ const ListItem = styled.li`
     max-width: 50%;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 25%;
+    transition: 0.5s all ease-in-out;
+    &:hover {
+      transform: scale(1.3);
+    }
   }
   .card {
     padding-top: 25%;

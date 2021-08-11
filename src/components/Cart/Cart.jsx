@@ -1,19 +1,19 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import CartAmount from './CartAmmount';
-import { formatPrice } from '../../helpers/constants';
-import { useGlobalContext } from '../../helpers/context';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import CartAmount from "./CartAmmount";
+import { formatPrice } from "../../helpers/constants";
+import { useGlobalContext } from "../../helpers/context";
 
 const Cart = () => {
   const { isCartModalOpen, cart, total_price, clearCart, toggleCartModal } =
     useGlobalContext();
 
   return (
-    <Wrapper className={`${isCartModalOpen ? 'show' : 'hide'}`}>
-      <div className='cart-header'>
+    <Wrapper className={`${isCartModalOpen ? "show" : "hide"}`}>
+      <div className="cart-header">
         <h6>cart ({cart.length})</h6>
-        <button className='clear-cart' onClick={clearCart}>
+        <button className="clear-cart" onClick={clearCart}>
           Remove all
         </button>
       </div>
@@ -23,10 +23,10 @@ const Cart = () => {
             const { id, slug, cartImage, price, amount } = cartItem;
             return (
               <ListItem key={id}>
-                <img src={cartImage} alt='cart item' />
-                <div className='item-info'>
-                  <h6 className='slug'>{slug}</h6>
-                  <span className='price'>{formatPrice(price)}</span>
+                <img src={cartImage} alt="cart item" />
+                <div className="item-info">
+                  <h6 className="slug">{slug}</h6>
+                  <span className="price">{formatPrice(price)}</span>
                 </div>
                 <CartAmount value={amount} id={id} />
               </ListItem>
@@ -34,17 +34,17 @@ const Cart = () => {
           })}
         </CartList>
       )}
-      {!cart.length && <p className='empty-cart-message'>Your cart is empty</p>}
-      <div className='total-price'>
-        <span className='heading'>total</span>
-        <span className='cart-price'>{formatPrice(total_price)}</span>
+      {!cart.length && <p className="empty-cart-message">Your cart is empty</p>}
+      <div className="total-price">
+        <span className="heading">total</span>
+        <span className="cart-price">{formatPrice(total_price)}</span>
       </div>
       <Link
-        to={`${cart.length ? '/checkout' : '/'}`}
-        className='btn-1 cart-btn'
+        to={`${cart.length ? "/checkout" : "/"}`}
+        className="btn-1 cart-btn"
         onClick={toggleCartModal}
       >
-        {cart.length > 0 ? 'Checkout' : 'Fill it'}
+        {cart.length > 0 ? "Checkout" : "Fill it"}
       </Link>
     </Wrapper>
   );
