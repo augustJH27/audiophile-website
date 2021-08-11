@@ -19,6 +19,7 @@
   --clr-danger: hsl(0, 65%, 49%);
 
   /* Font size */
+
   --fs-h1: 3.5rem;
   --fs-h2: 2.5rem;
   --fs-h3: 2rem;
@@ -28,7 +29,9 @@
   --fs-base: 0.9375rem;
   --fs-mili: 0.875rem;
   --fs-micro: 0.8125rem;
+
   /* Line height */
+
   --lh-h1: 3.625rem;
   --lh-h2: 2.75rem;
   --lh-h3: 2.25rem;
@@ -49,8 +52,9 @@
   --ls-h6: 0.081rem;
   --ls-mili: 0.625rem;
   --ls-micro: 0.063rem;
-  
+
   /* Offsets */
+
   --offset-big: 2.375rem;
 
   /* Others */
@@ -61,8 +65,7 @@
   --general-transition: all 0.3s ease-in-out;
 }
 
-/* global styles */
-
+/* Global styling */
 *,
 ::after,
 ::before {
@@ -132,11 +135,11 @@ h6 {
   text-transform: uppercase;
 }
 
-/* .container {
+.container {
   width: 90vw;
   max-width: 1110px;
   margin: 0 auto;
-} */
+}
 
 .btn-1 {
   display: inline-block;
@@ -202,8 +205,6 @@ h6 {
 }
 
 .btn-3::after {
-  /* content: url('../public/shared/desktop/icon-arrow-right.svg'); */
-  position: absolute;
   top: 3%;
   right: 0;
   background: none;
@@ -268,10 +269,10 @@ svg:hover path {
   background-color: var(--clr-black);
 }
 
-/* components styling */
+/* component stying */
 
 .speaker-zx9 {
-  /* background-image: url('../public/home/desktop/pattern-circles.svg'); */
+  background-image: url('./components/assets/home/desktop/pattern-circles.svg');
   background-position: center -8rem;
   background-repeat: no-repeat;
   background-size: 170%;

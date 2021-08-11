@@ -3,29 +3,24 @@ import styled from 'styled-components';
 import Hero from '../components/Hero/Hero';
 import Hero2 from '../components/Hero2/Hero2';
 import Catalog from '../components/CatalogCard/Catalog';
-import Bringing from '../components/Bringing/Bringing';
+import Bringing from '../components/Bringing/Bringing'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
-import Navbar from '../components/Navbar/Navbar'
-import Footer from '../components/Footer/Footer'
-
 
 function LandingPage() {
   return (
     <Router>
       <Switch>
         <Route exact path='/'>
-        <Navbar />
         <Hero />
           <Container>
           <Catalog />
           <Hero2 />
           <Bringing />
           </Container> 
-        <Footer />
         </Route>
       </Switch>
     </Router>

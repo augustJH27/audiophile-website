@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useGlobalContext } from '../../helpers/context';
-import { formatPrice } from '../../helpers/constants';
 import styled from 'styled-components';
+import { formatPrice } from '../../helpers/constants';
 
 const OrderModal = () => {
   const {
