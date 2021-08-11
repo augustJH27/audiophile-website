@@ -66,6 +66,8 @@ const ImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: var(--radius);
+    animation:pulse;
+    animation-duration: 7s;
   }
   @media screen and (min-width: 768px) {
     max-width: 50%;
